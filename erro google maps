@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projeto_3</title>
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=01,maximum-scale=1.0"/>
+  </head>
+  <body>
+    <header>
+      <section class="sessao2">
+        <div class="container">
+          <h2>Desenvolvido de pessoas para pessoas</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            maximus nulla nec neque ultrices iaculis. Vestibulum nulla sapien,
+            consectetur sed magna at, mollis sodales leo. Sed et imperdiet nibh.
+            Mauris lacinia nisl nec sapien semper efficitur. Integer scelerisque
+            arcu in gravida faucibus. Cras feugiat erat nec aliquam rutrum.
+            Vestibulum neque magna, fringilla id odio vitae, euismod
+            sollicitudin quam. Vestibulum id eleifend tellus, id hendrerit est.
+            Maecenas ante nulla, mollis quis tortor non, mollis pharetra mauris.
+            Sed tellus velit, facilisis eget dolor id, ullamcorper porttitor
+            nulla. Nam et dolor congue, dapibus sapien nec, faucibus dui.
+          </p>
+          <img src="imagens/mockup.jpg" />
+        </div>
+        <!--container-->
+      </section>
+      <!--sessao2-->
+
+      <section class="sessao3">
+        <div class="parte1">
+          <div class="wraper-parte1">
+            <h2>nosso time</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              pulvinar diam metus, ornare pellentesque magna cursus a. Curabitur
+              nec nisl ut lectus mattis laoreet. Mauris eleifend luctus erat in
+              sagittis. Vestibulum sed sollicitudin velit. Fusce pharetra, diam
+              sit amet ultricies lacinia, nisi diam congue tortor, sed eleifend
+              diam justo eget nisl. Mauris tempor mauris magna, nec tincidunt
+              quam aliquam et. Mauris rhoncus est turpis, vitae viverra erat
+              porta vitae. Vivamus eleifend diam a nunc tristique, vitae sodales
+              velit pulvinar
+            </p>
+          </div>
+          <!--wraper-parte1-->
+        </div>
+        <!--parte1-->
+
+        <div class="parte2">
+          <div class="sobre-autor">
+            <div class="titulo-autor">
+              <div class="wraper-titulo-autor">
+                <div><h2>Lucas Antônio</h2></div>
+                <p>Co-Founder / Desenvolvedor</p>
+              </div>
+              <!--warper-titulo-autor-->
+              <div class="img"></div>
+            </div>
+            <!--titulo-autor-->
+            <div class="texto-autor">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                pulvinar diam metus, ornare pellentesque magna cursus a.
+                Curabitur nec nisl ut lectus mattis laoreet. Mauris eleifend
+                luctus erat in sagittis. Vestibulum sed sollicitudin velit.
+                Fusce pharetra, diam sit amet ultricies lacinia, nisi diam
+                congue tortor, sed eleifend diam justo eget nisl. Mauris tempor
+                mauris magna, nec tincidunt quam aliquam et. Mauris rhoncus est
+                turpis, vitae viverra erat porta vitae. Vivamus eleifend diam a
+                nunc tristique, vitae sodales velit pulvinar
+              </p>
+            </div>
+            <!--texto-autor-->
+          </div>
+          <!--sobre-autor-->
+
+          <div class="slider-bullets">
+            <span style="background-color: black"></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!--slider-bullets-->
+        </div>
+        <!--parte2-->
+        <div class="clear"></div>
+      </section>
+      <!--sessao3-->
+
+      <section class="sessao4">
+        <div class="containrer">
+          <div class="form">
+            <h2>Entre em contato</h2>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                pulvinar diam metus Lorem ipsum dolor sit amet, consectetuLorem
+                ipsum dolor sit amet, consectetu
+              </p>
+            </div>
+            <form>
+              <input type="text" name="nome" placeholder="Nome*" />
+              <input type="text" name="email" placeholder="E-mail*" required />
+              <textarea name="mensagem" placeholder="Mensagem*"></textarea>
+              <input type="submit" value="Enviar" />
+            </form>
+            <!--form-->
+          </div>
+          <!--form-->
+
+          <div class="map-wraper" style="float: left; width: 50%; padding: 0 10px; color: white;" >
+            <h2 style="font-size: 23px; font-weight: 300px;" >Faça uma visita</h2>
+              <div class="map-wraper3" style="margin-top: 10px; width: 100%; max-width: 480px; position: relative;" >
+              <div class="map-wraper2" style="position: absolute; left: 0; top: 0; width: 100%; padding-top: 100%;" >
+                <div class="map" style="left: 0; top: 0; position: absolute; width: 100%; background: white; border: 5px solid rgb(200,200,200); height: 100%; " >
+                <div class="map" id="mapa"></div>
+                  
+                </div><!--map-->
+              </div><!--map-wraper2-->
+              </div><!--map-wraper-3-->
+            </div><!--map-wraper-->
+              
+          <div class="clear"></div>
+        </div>
+        <!--container-->
+      </section>
+      <!--sessao4-->
+
+      <footer>
+        <div class="container">
+          <div><p>todos os direitos reservados</p></div>
+          <div><p>Xvideos@gmail.com</p></div>
+          <div class="clear"></div>
+        </div>  <!--container-->
+      </footer>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvwOgogaMujTonbbyyx608lHMI19mpS88"></script>
+      <script type="text/javascript" src="/JavaScript/function.js"></script>
+    </header>
+  </body>
+</html>
+
+window.onload = function () {
+  var map;
+
+  function initialize() {
+    var mapProp = {
+      center: new google.maps.LatLng(-27.648598, -48.577423),
+      scrollWheel: false,
+      zoom: 12,
+      MapTypeId: google.maps.MapTypeId.ROADMAP,
+    };
+
+    map = new google.maps.map(document.getElementById("mapa"),mapProp);
+  }
+
+  initialize();
+};
